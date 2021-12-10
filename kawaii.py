@@ -5,18 +5,18 @@ while True:
     print()
     print("Program Input Data Nilai Mahasiswa")
     print()
-    print("Ketik (I) untuk Menampilkan Data")
-    print("Ketik (M) untuk Menambahkan Data")
-    print("Ketik (A) untuk Mengubah Data")
-    print("Ketik (F) untuk Menghapus Data")
-    print("Ketik (Y) untuk Mencari Data")
+    print("Ketik (L) untuk Menampilkan Data")
+    print("Ketik (T) untuk Menambahkan Data")
+    print("Ketik (U) untuk Mengubah Data")
+    print("Ketik (H) untuk Menghapus Data")
+    print("Ketik (C) untuk Mencari Data")
     
     print("Ketik (K) untuk Keluar")
     
     print("--------------------------------")
     selected_menu = input("Pilih menu> ")
 
-    if selected_menu == "I":
+    if selected_menu == "L":
         if x.items():
             print("="*74)
             print("|                            Daftar Mahasiswa                            |")
@@ -40,7 +40,7 @@ while True:
         print()
         input("Tekan Enter untuk ke Menu Utama. . .")
 
-    elif selected_menu == "M":
+    elif selected_menu == "T":
         print("Menambahkan Tambah Data Mahasiswa")
         nama = input("Nama\t\t: ")
         nim = int(input("NIM\t\t: "))
@@ -52,7 +52,7 @@ while True:
         print("Data telah di Input !")
         input("Tekan Enter untuk ke Menu Utama. . .")
 
-    elif selected_menu == "Y":
+    elif selected_menu == "C":
         print("Mencari Data Mahasiswa")
         nama = input("Masukkan Nama : ")
         if nama in x.keys() :
@@ -67,7 +67,7 @@ while True:
             print("Nama {0} Tidak Ditemukan".format(nama))
         input("Tekan Enter untuk ke Menu Utama. . .")
 
-    elif selected_menu == "A":
+    elif selected_menu == "U":
         print("Ubah Data Mahasiswa")
         nama = input("Masukkan Nama   : ")
         if nama in x.keys():
@@ -82,7 +82,7 @@ while True:
             print("Nama {0} tidak ditemukan".format(nama))
         input("Tekan Enter untuk ke Menu Utama. . .")
 
-    elif selected_menu == "F":
+    elif selected_menu == "H":
         print("Hapus Data Mahasiswa")
         nama = input("Masukkan Nama  : ")
         if nama in x.keys():
